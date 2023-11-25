@@ -14,7 +14,7 @@
 ### Enable auto-sync in ArgoCD
 ![argo_sync_enabe_auto.png](img%2Fargo_sync_enabe_auto.png)
 
-### Check application
+### Validation of application:
 ![ambassador.gif](img%2Fambassador.gif)
 
 ### Commands used in demo
