@@ -17,7 +17,7 @@
 ### Validation of application:
 ![ambassador.gif](img%2Fambassador.gif)
 
-### Commands used in demo
+### Commands used in validation
 
 #### Check Kubernetes service:
 ```bash
