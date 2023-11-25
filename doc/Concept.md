@@ -1,36 +1,38 @@
-# Порівняльний Аналіз Kubernetes Інструментів для AsciiArtify
+# Comparative Analysis of Kubernetes Tools for AsciiArtify
 
-## Вступ
+## Introduction
 
-Цей документ представляє порівняльний аналіз трьох інструментів для локального розгортання Kubernetes кластерів — minikube, kind та k3d. Вони використовуються для розробки та тестування Kubernetes у локальному середовищі, забезпечуючи зручне середовище для розробників.
+This document presents a comparative analysis of three tools for local deployment of Kubernetes clusters — minikube, kind, and k3d. They are used for developing and testing Kubernetes in a local environment, providing a convenient environment for developers.
 
-## Характеристики
+## Features
 
 ### Minikube
-- **Підтримувані ОС та Архітектури:** Windows, macOS, та Linux; підтримка x86-64.
-- **Автоматизація:** Вбудована підтримка Helm charts, спрощення управління ресурсами.
-- **Додаткові Функції:** Візуалізація з Kubernetes Dashboard, підтримка різних драйверів віртуалізації.
+- **Supported OS and Architectures:** Windows, macOS, and Linux; support for x86-64.
+- **Automation:** Built-in support for Helm charts, simplifying resource management.
+- **Additional Features:** Visualization with Kubernetes Dashboard, support for various virtualization drivers.
 
 ### Kind
-- **Підтримувані ОС та Архітектури:** Виключно Linux; оптимізовано для Docker.
-- **Автоматизація:** Підтримує CI/CD інтеграцію, автоматизоване розгортання за допомогою YAML.
-- **Додаткові Функції:** Підтримка множинних кластерів, простота у використанні для розробників.
+- **Supported OS and Architectures:** Exclusively Linux; optimized for Docker.
+- **Automation:** Supports CI/CD integration, automated deployment using YAML.
+- **Additional Features:** Support for multiple clusters, ease of use for developers.
 
 ### K3d
-- **Підтримувані ОС та Архітектури:** Переважно Linux; обмежена підтримка Windows та macOS.
-- **Автоматизація:** Швидке створення кластерів, інтеграція з Rancher для спрощеного управління.
-- **Додаткові Функції:** Мінімалістичний підхід, низьке споживання ресурсів.
+- **Supported OS and Architectures:** Primarily Linux; limited support for Windows and macOS.
+- **Automation:** Rapid cluster creation, integration with Rancher for simplified management.
+- **Additional Features:** Minimalist approach, low resource consumption.
 
-## Переваги та Недоліки
+## Advantages and Disadvantages
 
-| Характеристика | Minikube | Kind | K3d |
-|----------------|----------|------|-----|
-| Легкість Використання | Висока | Середня | Висока |
-| Швидкість Розгортання | Середня | Висока | Дуже висока |
-| Стабільність | Висока | Висока | Середня |
-| Документація та Підтримка Спільноти | Висока | Висока | Середня |
+| Feature | Minikube | Kind | K3d |
+|---------|----------|------|-----|
+| Ease of Use | High | Medium | High |
+| Deployment Speed | Medium | High | Very High |
+| Stability | High | High | Medium |
+| Documentation and Community Support | High | High | Medium |
 
-## Демонстрація
-
+## Demonstration
+### Minikube
 ![Image](./img/minikube.gif)
 
+### K3d
+![Image](./img/k3d.gif)
