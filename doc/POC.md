@@ -24,7 +24,7 @@ k port-forward svc/argocd-server -n argocd 8080:443&
 k get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo 
 ```
 ### To login to ArgoCD GUI, use the following URL and credentials:
-### URL: https://localhost:8080 username: admin password: <password from above>
+### URL: https://localhost:8080 username: admin password: "password from above"
 ![Image](./ArgoCD.png)
 ### port forward echo server
 ```bash
