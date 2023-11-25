@@ -13,7 +13,7 @@ k apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/m
 ### check argocd. wait until all pods are running
 ```bash
 k get all -n argocd 
-k get po -n argocd -w 
+k get po -n argocd -w # wait until all pods are running
 ```
 ### port forward argocd server
 ```bash
@@ -25,7 +25,7 @@ k get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}
 ```
 ### To login to ArgoCD GUI, use the following URL and credentials:
 ### URL: https://localhost:8080 username: admin password: "password from above"
-![Image](./ArgoCD.png)
+![Image](./img/ArgoCD.png)
 ### port forward echo server
 ```bash
 k port-forward -n demo svc/echo-service 8088:8080& 
@@ -34,7 +34,7 @@ k port-forward -n demo svc/echo-service 8088:8080&
 ```bash
 curl localhost:8088 
 ```
-![Image](./check_echo.gif)
+![Image](./img/check_echo.gif)
 ### delete argocd
 ```bash
 k delete -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml 

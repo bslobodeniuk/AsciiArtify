@@ -32,5 +32,5 @@
 
 ## Демонстрація
 
-![Image](./minikube.gif)
+![Image](./img/minikube.gif)
 

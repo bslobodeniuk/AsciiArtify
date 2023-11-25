@@ -1,3 +1,3 @@
 # AsciiArtify
 
-![Image](doc/1.png)
+![Image](doc/img/1.png)
