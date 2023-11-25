@@ -10,10 +10,10 @@ k create ns argocd
 ```bash
 k apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml 
 ```
-### check argocd
+### check argocd. wait until all pods are running
 ```bash
-k get po -n argocd -w 
 k get all -n argocd 
+k get po -n argocd -w 
 ```
 ### port forward argocd server
 ```bash
@@ -44,15 +44,6 @@ k delete -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/
 k3d cluster delete argocd
 ```
 
-
-
-k port-forward svc/argocd-server -n argocd 8080:443& 
-k get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo #get argocd password
-#To login to ArgoCD GUI, use the following URL and credentials:
-#URL: https://localhost:8080 username: admin password: <password from above>
-
-k port-forward -n demo svc/echo-service 8088:8080& #port forward echo server
-#curl localhost:8088 #test echo server
 
 
 
