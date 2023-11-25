@@ -1,4 +1,4 @@
-### Create Kubernetes cluster and run ArgoCD
+### Create Kubernetes cluster with **k3d** and run **ArgoCD**
 ![Image](./img/mvp_cluster_create.gif)
 
 ### Authentication in ArgoCD
@@ -8,18 +8,21 @@ k get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}
 ```
 ![argo_login.png](img%2Fargo_login.png)
 
-### Application delivery automation with ArgoCD
+### Application delivery automation
+#### Create new application for delivery with ArgoCD
 ![argo_empty.png](img%2Fargo_empty.png)
 ![argo_create_app.png](img%2Fargo_create_app.png)
-### Check application status in ArgoCD
+### Enable auto-sync (re-deploy) for application
+![argo_sync_enabe_auto.png](img%2Fargo_sync_enabe_auto.png)
+### Check application status in ArgoCD GUI and in the terminal
 ![argo_sync.png](img%2Fargo_sync.png)
 ![argo_sync_1.png](img%2Fargo_sync_1.png)
 ![argo_sync_done.png](img%2Fargo_sync_done.png)
-### Enable auto-sync (re-deploy) for application in ArgoCD
-![argo_sync_enabe_auto.png](img%2Fargo_sync_enabe_auto.png)
-
 ### Application validation in the terminal:
 ![ambassador.gif](img%2Fambassador.gif)
+
+#### Result:
+![google.png](img%2Fgoogle.png)
 
 ### Used commands:
 
