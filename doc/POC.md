@@ -25,7 +25,7 @@ k get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}
 ```
 ### To login to ArgoCD GUI, use the following URL and credentials:
 ### URL: https://localhost:8080 username: admin password: <password from above>
-![Image](./argocd.png)
+![Image](./ArgoCD.png)
 ### port forward echo server
 ```bash
 k port-forward -n demo svc/echo-service 8088:8080& 
